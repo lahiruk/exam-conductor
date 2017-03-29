@@ -15,7 +15,8 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	private void unusedFunction(String unusedParam) {
+	private void unusedFunction(String unusedParam,String usedParam) {
+		System.out.println(usedParam==usedGlobal);
 		String unusedVariable;
 		usedFunction("test");
 	}
