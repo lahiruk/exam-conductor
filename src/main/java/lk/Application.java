@@ -16,7 +16,8 @@ public class Application {
 	}
 
 	private void unusedFunction(String unusedParam,String usedParam) {
-		System.out.println(usedParam==usedGlobal);
+		String usedVariable;
+		System.out.println(usedParam==usedGlobal?usedVariable:"");
 		String unusedVariable;
 		usedFunction("test");
 	}
