@@ -19,10 +19,16 @@ public class Application {
 		String usedVariable;
 		System.out.println(usedParam==usedGlobal?usedVariable:"");
 		String unusedVariable;
-		usedFunction("test");
+		usedFunction("test","Test");
+		usedFunction2("test");
 	}
 
 	private void usedFunction(String usedParam, String unusedParam2) {
+		String usedVariable;
+		System.out.println(usedParam==usedGlobal?usedVariable:"");
+	}
+	
+	private void usedFunction2(String usedParam) {
 		String usedVariable;
 		System.out.println(usedParam==usedGlobal?usedVariable:"");
 	}
